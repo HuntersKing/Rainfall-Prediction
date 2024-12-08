@@ -27,10 +27,11 @@ The model uses the following weather parameters for prediction:
 
 2. Data Visualisation
    - Removes highly correlated features (maxtemp, mintemp, temperature)
-   - Performs downsampling to handle class imbalance
-        Down Sampled Data
-        df_downsampled.head()
-        ![Down_sampled data for the data visvalization](C:\Users\AKpra\OneDrive\Desktop\RainPridiction)
+   - Performs downsampling to handle class imbalance<br/></br>
+        Down Sampled Data</br>
+        df_downsampled.head()<br/>
+        ![Down_sampled data for the data visualization](https://github.com/user-attachments/assets/80ca2f15-fbe7-4799-840e-b69ddc062aa6)
+
 
 3. Model Training
    - Uses RandomForestClassifier with GridSearchCV for hyperparameter tuning
