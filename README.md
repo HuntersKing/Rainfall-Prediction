@@ -42,9 +42,9 @@ The model is evaluated using:
 - Confusion matrix
 - Classification report
 # Load the Modal:
- with open("model.pkl", "rb") as file:
- model_data = pickle.load(file)
- model = model_data["model"]
+ with open("model.pkl", "rb") as file:</br>
+ model_data = pickle.load(file)</br>
+ model = model_data["model"]</br>
  features_names = model_data["features"]
 
 ## Model Storage
@@ -54,5 +54,5 @@ The trained model is saved as 'model.pkl' using pickle, which includes:
 - Feature names used for prediction
 
 ## Example Input Data
-input_data = [1015.9, 19.9, 95, 81, 0, 40, 13.7]
+input_data = [1015.9, 19.9, 95, 81, 0, 40, 13.7] </br>
 input_df = pd.DataFrame([input_data], columns=features_names)
