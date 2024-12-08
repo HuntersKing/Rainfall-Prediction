@@ -1,0 +1,13 @@
+# Rain Prediction Model
+
+This project is a simple web application that predicts whether it will rain based on various weather conditions. It uses a pre-trained machine learning model to make predictions.
+
+## Features
+
+- **Pressure**: Atmospheric pressure (in hPa)
+- **Dewpoint**: Dew point temperature (in Celsius)
+- **Humidity**: Relative humidity (in %)
+- **Cloud**: Cloud cover (in oktas)
+- **Sunshine**: Sunshine duration (in hours)
+- **Windspeed**: Wind speed (in km/h)
+        
