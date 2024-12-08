@@ -41,6 +41,11 @@ The model is evaluated using:
 - Test set accuracy
 - Confusion matrix
 - Classification report
+# Load the Modal:
+ with open("model.pkl", "rb") as file:
+ model_data = pickle.load(file)
+ model = model_data["model"]
+ features_names = model_data["features"]
 
 ## Model Storage
 
@@ -48,6 +53,6 @@ The trained model is saved as 'model.pkl' using pickle, which includes:
 - The trained RandomForestClassifier model
 - Feature names used for prediction
 
-## Usage
-
-To use the trained model for prediction:
+## Example Input Data
+input_data = [1015.9, 19.9, 95, 81, 0, 40, 13.7]
+input_df = pd.DataFrame([input_data], columns=features_names)
