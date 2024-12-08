@@ -28,6 +28,9 @@ The model uses the following weather parameters for prediction:
 2. Data Visualisation
    - Removes highly correlated features (maxtemp, mintemp, temperature)
    - Performs downsampling to handle class imbalance
+        Down Sampled Data
+        df_downsampled.head()
+        ![Down_sampled data for the data visvalization](C:\Users\AKpra\OneDrive\Desktop\RainPridiction)
 
 3. Model Training
    - Uses RandomForestClassifier with GridSearchCV for hyperparameter tuning
@@ -41,7 +44,9 @@ The model is evaluated using:
 - Test set accuracy
 - Confusion matrix
 - Classification report
+
 # Load the Modal:
+
  with open("model.pkl", "rb") as file:</br>
  model_data = pickle.load(file)</br>
  model = model_data["model"]</br>
@@ -54,5 +59,6 @@ The trained model is saved as 'model.pkl' using pickle, which includes:
 - Feature names used for prediction
 
 ## Example Input Data
+
 input_data = [1015.9, 19.9, 95, 81, 0, 40, 13.7] </br>
 input_df = pd.DataFrame([input_data], columns=features_names)
