@@ -25,7 +25,7 @@ The model uses the following weather parameters for prediction:
    - Handles missing values in wind direction and wind speed
    - Converts rainfall labels to binary (1 for yes, 0 for no)
 
-2. Data Visvalisation
+2. Data Visualisation
    - Removes highly correlated features (maxtemp, mintemp, temperature)
    - Performs downsampling to handle class imbalance
 
